@@ -1,0 +1,54 @@
+footer{
+    margin-top: 50px;
+    background: $secondary-color;
+    color: $primary-color;
+    padding: 20px;
+    .wrapper{
+        padding-right: 20px;
+    }
+}
+
+h3{
+    padding: 20px 0;
+}
+li{
+     list-style: none;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: 10px;
+     font-size: 0.9rem;
+     
+    .prime{
+        padding: 0 10px;
+        margin-right: 10px;
+         font-size: 1rem;
+         background: $primary-color;
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+         display: grid;
+         place-items: center;
+     }
+
+     a{
+        color: $primary-color;
+    }
+}
+
+.socmed-wrapper{
+    display: flex;
+}
+.socmed{
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    margin: 10px;
+    i{
+        font-size: 1rem;
+    }
+}
+

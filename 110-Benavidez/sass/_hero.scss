@@ -1,0 +1,87 @@
+@import './colors';
+
+.hero {
+    background-color: $secondary-color;
+    width: 100%;
+    height: 80vh;
+    padding: 10px 0;
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $secondary-color;
+        padding: 10px 0;
+    }
+}
+
+.logo {
+    color: $primary-color;
+}
+
+.phone{
+    color: $light-gray;
+}
+
+.container {
+    background: $primary-color;
+    margin: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+    @media only screen and(max-width: 500px){
+        margin: 10px;
+        grid-template-columns: 1fr;
+    }
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 550px;
+    border-right: 2px $accent solid;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: right;
+
+    @media only screen and(max-width: 500px) {
+        border-right: 0;
+        padding: 20px;
+    }
+}
+
+.l-heading {
+    font-size: 3rem;
+    @media only screen and(max-width: 500px){
+        font-size: 2rem;
+    }
+}
+
+.s-heading {
+    font-size: 1.1rem;
+    font-family: 'PT Serif', serif;
+
+    span {
+        font-weight: 700;
+    }
+
+    @media only screen and(max-width: 500px){
+        font-size: 0.9rem;
+    }
+}
+
+.bg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg-photo.jpg') no-repeat center center/cover;
+
+    @media only screen and(max-width: 500px){
+        display: none;
+    }
+}
+
+
+
